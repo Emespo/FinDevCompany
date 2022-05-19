@@ -17,16 +17,15 @@ h1 {
 color: red;
 }
 
-.menu {
-  margin-top: 25em;
-  display: flex;
-  gap: 1em;
-  justify-content: space-around;
-  text-align: center;
+header {
+    height: 150px;
 }
 
-.menu a {
-  width: 250px;
-  font-size: 1.5em;
-  padding: 2em;
+h2 {
+    text-align: center;
+    color: #707070;
+}
+
+input {
+    background-color: #E2EFDA;
 }

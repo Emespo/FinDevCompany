@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Robotodisplay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styleformulaire.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Business Intelligence Tool</title>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img
+                        class="logo"
+                        src="Logo.svg"
+                        alt="Logo FinDevCompany"
+                        />
+                    </a>
+                    <h1>Business Intelligence Tool</h1>
+                    <button type="button" class="btn btn-outline-danger">
+                        <span>Déconnexion</span>
+                    </button>
+                </div>
+            </nav>
+        
+        </header>
+
+        <main>
+            <section>
+
+                <h2>Formulaire de saisie</h2>
+
+                <h3>Description de l'opération</h3>
+                <p>A = base de départ du véhicule ; B = point de chargement ; C = point de déchargement.
+                    Le véhicule opère des navettes entre B et C sur une journée.
+                    Après le dernier déchargement de la journée en C, il retourne directement à sa base A.</p>
+
+                <table class="table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Poste</th>
+                            <th>Distance</th>
+                            <th>Péage</th>
+                            <th>Temps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td width="500px">Parcours d'approche jusqu'au point de chargement : relation AB</td>
+                            <td><input type="number" placeholder="0.0"></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Temps de chargement en B</td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Transport en charge : relation BC</td>
+                            <td><input type="number" placeholder="0.0"></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Temps de déchargement en C</td>
+                            <td></td>
+                            <td></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Retour au point de chargement : relation CB</td>
+                            <td><input type="number" placeholder="0.0"></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Retour après le dernier déchargement à la base de départ : relation CA</td>
+                            <td><input type="number" placeholder="0.0"></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Unité de chargement</td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Chargement d'un tour (correspondant à l'unité ci-dessus)</td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Temps de travail journalier pouvant être effectué</td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+                        <tr>
+                            <td width="500px">Autre coût, lié au transport ou non, à inclure dans le calcul de coût d'un tour le cas échéant</td>
+                            <td><input type="number" placeholder="0.0"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <h3>Journée d'exploitation optimale</h3>
+
+                <table class="table-striped table-hover">
+                    <tr>
+                        <td width="500px">Nombre de tour(s) ou déchargement(s) possible(s)</td>
+                        <td><input type="number" placeholder="0.0"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Kilométrage total parcouru</td>
+                        <td><input type="number" placeholder="0.0"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Chargement total transporté</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Temps de service nécessaire</td>
+                        <td><input type="number" placeholder="0.0"></td>
+                    </tr>
+                </table>
+
+                <h3>Coût de revient de la simulation effectuée</h3>
+                <p>Au choix du commercial</p>
+
+                <table class="table-striped table-hover">
+                    <tr>
+                        <td width="500px">Terme kilométique pour 1 km parcouru - <strong>Hors péages</strong></td>
+                        <td><input type="number" placeholder="0.0"></td>
+                        <td><input type="text" placeholder="Unité"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Terme kilométique pour 1 km parcouru - <strong>Avec péages</strong></td>
+                        <td><input type="number" placeholder="0.0"></td>
+                        <td><input type="text" placeholder="Unité"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Terme journalier <strong>par journée d'exploitation</strong> du véhicule</strong></td>
+                        <td><input type="number" placeholder="0.0"></td>
+                        <td><input type="text" placeholder="Unité"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Terme horaire <strong>pour une heure de temps de service</strong></td>
+                        <td><input type="number" placeholder="0.0"></td>
+                        <td><input type="text" placeholder="Unité"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Autres coûts à renseigner si nécessaire</td>
+                        <td><input type="number" placeholder="0.0"></td>
+                        <td><input type="text" placeholder="Unité"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Coût de revient par jour si utilisation du trinôme</td>
+                        <td><input type="number" placeholder="0.0"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Coût de revient par jour si saisie par le commercial</td>
+                        <td><input type="number" placeholder="0.0"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Marge</td>
+                        <td><input type="number" placeholder="0.0"></td>
+                    </tr>
+                    <tr>
+                        <td width="500px">Coût d'une journée à facturer</td>
+                        <td><input type="number" placeholder="0.0"></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
