@@ -21,7 +21,7 @@ class Page extends Controller
         
         $pageTitle = 'Business Intelligence Tool';
         //avec le renderer je gere les vu la ba pour eviter de repeter le code
-        \Renderer::render('articles/index', compact('pageTitle'));
+        \Renderer::render('articles/listeDevis', compact('pageTitle'));
     }
 
        // ===================================================================================================
@@ -37,7 +37,7 @@ class Page extends Controller
         
         $pageTitle = 'Business Intelligence Tool';
         //avec le renderer je gere les vu la ba pour eviter de repeter le code
-        \Renderer::render('articles/index', compact('pageTitle'));
+        \Renderer::render('articles/menuC', compact('pageTitle'));
     }
            // ===================================================================================================
     // ===============================        menuCG    ===========================================
@@ -52,7 +52,7 @@ class Page extends Controller
         
         $pageTitle = 'Business Intelligence Tool';
         //avec le renderer je gere les vu la ba pour eviter de repeter le code
-        \Renderer::render('articles/index', compact('pageTitle'));
+        \Renderer::render('articles/menuCG', compact('pageTitle'));
     }
            // ===================================================================================================
     // ===============================        pageCharges    ===========================================
@@ -67,7 +67,7 @@ class Page extends Controller
         
         $pageTitle = 'Business Intelligence Tool';
         //avec le renderer je gere les vu la ba pour eviter de repeter le code
-        \Renderer::render('articles/index', compact('pageTitle'));
+        \Renderer::render('articles/pageCharges', compact('pageTitle'));
     }
 
                // ===================================================================================================
@@ -83,7 +83,7 @@ class Page extends Controller
         
         $pageTitle = 'Business Intelligence Tool';
         //avec le renderer je gere les vu la ba pour eviter de repeter le code
-        \Renderer::render('articles/index', compact('pageTitle'));
+        \Renderer::render('articles/pageFormulaire', compact('pageTitle'));
     }
                // ===================================================================================================
     // ===============================        pageClient    ===========================================
@@ -98,8 +98,66 @@ class Page extends Controller
         
         $pageTitle = 'Business Intelligence Tool';
         //avec le renderer je gere les vu la ba pour eviter de repeter le code
-        \Renderer::render('articles/index', compact('pageTitle'));
+        \Renderer::render('articles/pageClient', compact('pageTitle'));
     }
+               // ===================================================================================================
+    // ===============================        restitutionDonnée    ===========================================
+    // ===================================================================================================
 
+    public function restitutionDonnee()
+    {
+        //si pas de session lance une session
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        
+        $pageTitle = 'Business Intelligence Tool';
+        //avec le renderer je gere les vu la ba pour eviter de repeter le code
+        \Renderer::render('articles/restitutionDonnee', compact('pageTitle'));
+    }
+               // ===================================================================================================
+    // ===============================        repartitionCharge    ===========================================
+    // ===================================================================================================
+
+    public function repartitionCharge()
+    {
+        //si pas de session lance une session
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        
+        $pageTitle = 'Business Intelligence Tool';
+        //avec le renderer je gere les vu la ba pour eviter de repeter le code
+        \Renderer::render('articles/repartitionCharge', compact('pageTitle'));
+    }
+                   // ===================================================================================================
+    // ===============================     client      ===========================================
+    // ===================================================================================================
+
+    public function client()
+    {
+        //si pas de session lance une session
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        
+        $pageTitle = 'Business Intelligence Tool';
+        //avec le renderer je gere les vu la ba pour eviter de repeter le code
+        \Renderer::render('articles/client', compact('pageTitle'));
+    }
+                       // ===================================================================================================
+    // ===============================     visualisationDevis      ===========================================
+    // ===================================================================================================
+
+    public function visualisationDevis()
+    {
+        //si pas de session lance une session
+        if (!isset($_SESSION)) {
+            session_start();
+        }
+        
+        $pageTitle = 'Business Intelligence Tool';
+        //avec le renderer je gere les vu la ba pour eviter de repeter le code
+        \Renderer::render('articles/visualisationDevis', compact('pageTitle'));
+    }
 }
-
