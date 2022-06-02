@@ -23,7 +23,7 @@ class Article extends Controller
         
         $pageTitle = 'Accueil';
         //avec le renderer je gere les vu la ba pour eviter de repeter le code
-        \Renderer::render('articles/index', compact('pageTitle', 'articles', 'categorie', 'alert', 'alertAdmin', 'control'));
+        \Renderer::render('articles/index', compact('pageTitle'));
     }
    
 }

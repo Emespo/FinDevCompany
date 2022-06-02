@@ -10,7 +10,7 @@ if (!isset($_SESSION)) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Robotodisplay=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title><?php $pageTitle ?></title>
   </head>
@@ -19,7 +19,7 @@ if (!isset($_SESSION)) {
   <div class="container">
     <header class="row">
       <div class="image">
-        <img src="logoFinDevCompany.jpg" class="logo">
+        <img src="./pictures/Logo FinDev.png" class="logo">
       </div>
     </header>
     <main class="row">

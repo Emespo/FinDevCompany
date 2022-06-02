@@ -1,0 +1,217 @@
+.identification, .userName, .password, .formId {
+    text-align: center;
+}
+  
+.identification {
+    color: #535252;
+    font-size: 1.8em;
+    padding-bottom: 5%;
+}
+  
+.formId {
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px #f5c1c1;
+    width: 100%;
+    padding: 1%;
+    margin: 0 auto;
+}
+  
+.userName, .password {
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 100%;
+    height: 8vh;
+    background: #f5c1c1;
+    margin-bottom: 5%;
+}
+  
+.formId, .btnConnect {
+    border: solid 1px gray;
+    margin: 2%;
+}
+
+.identification, .userName, .password, .formId {
+    text-align: center;
+}
+  
+.identification {
+    color: #535252;
+    font-size: 1.8em;
+    padding-bottom: 5%;
+}
+  
+.formId {
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px #f5c1c1;
+    width: 100%;
+    padding: 1%;
+    margin: 0 auto;
+}
+  
+.userName, .password {
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 100%;
+    height: 8vh;
+    background: #f5c1c1;
+    margin-bottom: 5%;
+}
+  
+.formId, .btnConnect {
+    border: solid 1px gray;
+    margin: 2%;
+}
+
+.identification, .userName, .password, .formId {
+    text-align: center;
+}
+  
+.identification {
+    color: #535252;
+    font-size: 1.8em;
+    padding-bottom: 5%;
+}
+  
+.formId {
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px #f5c1c1;
+    width: 100%;
+    padding: 1%;
+    margin: 0 auto;
+}
+  
+.userName, .password {
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 100%;
+    height: 8vh;
+    background: #f5c1c1;
+    margin-bottom: 5%;
+}
+  
+.formId, .btnConnect {
+    border: solid 1px gray;
+    margin: 2%;
+}
+
+.menu {
+    margin-top: 25em;
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+    text-align: center;
+}
+  
+.menu a {
+    width: 250px;
+    font-size: 1.5em;
+    padding: 2em;
+}
+
+.repartitionCharges {
+    text-align: center;
+    color: #707070;
+}
+
+.inputRepartition {
+    background-color: #E2EFDA;
+}
+
+.restitution {
+    font-size: 2em;
+    color: #3f3f3f;
+    padding-bottom: 40px;
+  }
+
+.tableRestitution1, .tableRestitution2 {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #3f3f3f;
+}
+
+.tableRestitution1 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.tableRestitution2 {
+    width: 75%;
+}
+  
+.ratios th:nth-child(1) {
+    width: 75%;
+}
+
+.donnees {
+      border: 1px solid gray;
+      border-collapse: collapse;
+}
+
+* {
+    margin-left: 1%;
+}
+
+.entete1, .entete2 {
+    border: 1px solid black;
+    width: 500px;
+    height: 100px;
+}
+
+.entete2 {
+    margin-left: 55%;
+}
+
+.devis {
+    color: gray;
+    text-align: center;
+}
+
+.proposition {
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+}
+
+table, tr, td {
+    border: 1px solid black;
+}
+
+.nbJoursPrevus {
+    width: 90%;
+}
+
+.refus, .accept {
+    border: 1px solid white;
+}
+
+.refus {
+    background: orange;
+}
+
+.accept {
+    background: #28be28;
+}
+
+.formSaisie {
+    text-align: center;
+    color: #707070;
+}
+
+.titre3 {
+    margin-top: 50px !important;
+}
+
+.abc {
+    margin-top: 20px !important;
+}
+
+.tableForm {
+    margin-top: 30px !important;
+}
+
+.thForm {
+    font-size: 1.25em;
+}
+
+.inputForm {
+    background-color: #E2EFDA;
+}

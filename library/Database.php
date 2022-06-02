@@ -15,9 +15,9 @@ class Database
         //@include_once "./library/connection.php";
 
         $dbHost = "localhost";
-        $dbName = "SMMediaBdd";
-        $dbUser = "sebastien";
-        $dbPwd = "sebastien";
+        $dbName = "bddfindev";
+        $dbUser = "root";
+        $dbPwd = "";
 
         //connection de la BDD
         if (self::$instance === null) {

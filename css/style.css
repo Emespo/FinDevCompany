@@ -1,10 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap%27");
 * {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar {
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px #f5c1c1;
+}
+.navbar div {
+  border: 2px solid black;
+  border-radius: 15px;
+}
 
 .logo {
+  margin-top: 50px;
+  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   width: 200px;
@@ -13,11 +28,253 @@
 h1 {
   color: red;
 }
-.input-group {
-  display: flex;
-  justify-content: center;
+.center-h2 {
   text-align: center;
+  font-weight: bold;
+}
+.center-bottom {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+form span {
+  width: 100px;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.input-group {
+  margin-bottom: 8px;
+}
+.input-group-text {
+  background-color: white;
 }
 header {
   background-color: white;
+}
+.space-evenly {
+  display: flex;
+  justify-content: flex-start;
+}
+footer {
+  margin-top: 130px;
+}
+footer span {
+  margin-bottom: 50px;
+}
+footer a {
+  text-decoration: none;
+}
+.backLink {
+  color: red;
+  font-weight: bold;
+}
+.afterLink {
+  color: lightgreen;
+  font-weight: bold;
+}
+.identification,
+.userName,
+.password,
+.formId {
+  text-align: center;
+}
+
+.identification {
+  color: #535252;
+  font-size: 1.8em;
+  padding-bottom: 5%;
+}
+
+.formId {
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px #f5c1c1;
+  width: 100%;
+  padding: 1%;
+  margin: 0 auto;
+}
+
+.userName,
+.password {
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 100%;
+  height: 8vh;
+  background: #f5c1c1;
+  margin-bottom: 5%;
+}
+
+.formId,
+.btnConnect {
+  border: solid 1px gray;
+  margin: 2%;
+}
+.clients {
+  font-size: 2em;
+  color: #3f3f3f;
+  padding-bottom: 40px;
+}
+
+.liste {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #3f3f3f;
+}
+
+.enteteListe th:nth-child(1) {
+  width: 25%;
+}
+
+.enteteListe th:nth-child(2) {
+  width: 25%;
+}
+
+.enteteListe th:nth-child(3) {
+  width: 25%;
+}
+
+.enteteListe th:nth-child(4) {
+  width: 25%;
+}
+
+.trClient,
+.infoClient {
+  padding: 20px;
+  border: 1px solid gray;
+}
+.listDevis {
+  text-align: center;
+  color: #707070;
+  margin-top: 200px;
+}
+.menu {
+  margin-top: 25em;
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.menu a {
+  width: 250px;
+  font-size: 1.5em;
+  padding: 2em;
+}
+.formSaisie {
+  text-align: center;
+  color: #707070;
+}
+
+.titre3 {
+  margin-top: 50px !important;
+}
+
+.abc {
+  margin-top: 20px !important;
+}
+
+.tableForm {
+  margin-top: 30px !important;
+}
+
+.thForm {
+  font-size: 1.25em;
+}
+
+.inputForm {
+  background-color: #e2efda;
+}
+.connexion {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*-------------------------------------REPARTITION DES CHARGES------------------------------------------------ */
+.repartitionCharges {
+  color: #707070;
+  text-align: center;
+}
+
+.inputRepartition {
+  background-color: #e2efda;
+}
+
+.restitution {
+  font-size: 2em;
+  color: #3f3f3f;
+  padding-bottom: 40px;
+}
+
+.tableRestitution1,
+.tableRestitution2 {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid #3f3f3f;
+}
+
+.tableRestitution1 {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.tableRestitution2 {
+  width: 75%;
+}
+
+.ratios th:nth-child(1) {
+  width: 75%;
+}
+
+.donnees {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+* {
+  margin-left: 1%;
+}
+
+.entete1,
+.entete2 {
+  border: 1px solid black;
+  width: 500px;
+  height: 100px;
+}
+
+.entete2 {
+  margin-left: 55%;
+}
+
+.devis {
+  color: gray;
+  text-align: center;
+}
+
+.proposition {
+  border: 1px solid black;
+  width: 90%;
+  text-align: center;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+.nbJoursPrevus {
+  width: 90%;
+}
+/* -------------------------------NAV BAS DE PAGE ---------------------------------------------*/
+.space-evenly {
+  margin-top: 75px;
+}
+/*-------------------------------------FOOTER------------------------------------------------ */
+.toolName {
+  text-align: center;
+  text-decoration: solid;
+  color: red;
+}
+.width {
+  margin-left: 200px;
 }

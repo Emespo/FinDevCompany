@@ -1,8 +1,17 @@
 <section>
 <form method="post" action="" class="form">
-        <p>Identification</p>
+        <h1 style="text-align:center; margin-bottom:30px;">Identification</h1>
         <input type="text" class="userName" id="form" placeholder="Nom d'utilisateur">  
         <input type="password" class="password" id="password" placeholder="Mot de Passe">
-        <button type="submit" class="btn btn-light">Se connecter</button>
+
       </form> 
-      </section>
+      <div class="connexion">
+        <button type="submit" id="connexion" class="btn btn-light">Se connecter</button>
+        
+        <button type="submit" id="deconnexion" class="btn btn-light">Se déconnecter</button>
+</div>
+<div>
+<a href="index.php?controller=page&task=menuCG">PAGE contrôleur<br> de gestion</a> 
+        <a href="index.php?controller=page&task=menuC">Page commerciale</a>
+</div>
+      </section> 
