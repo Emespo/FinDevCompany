@@ -8,33 +8,32 @@ class Client extends Controller
 
     protected $modelName = \Models\Client::class;
 
-// ===================================================================================================
-// ===============================        création de Client =====================================
-// ===================================================================================================
+    // ===================================================================================================
+    // ===============================        création de Client =====================================
+    // ===================================================================================================
 
     public function CreateNewClient()
     {
         if (isset($_SESSION['userType'])) {
             header('Location: index.php?controller=page&task=index');
         } else {
-        //prend les informations du formulaire inscription
-        $userNameCompany = htmlspecialchars(filter_input(INPUT_POST, 'nameCompany'));
-        $userFirstName = htmlspecialchars(filter_input(INPUT_POST, 'firstName'));
-        $userName = htmlspecialchars(filter_input(INPUT_POST, 'name'));
-        $userAdress = htmlspecialchars(filter_input(INPUT_POST, 'adress'));
-        $userCity = htmlspecialchars(filter_input(INPUT_POST, 'city'));
-        $userCP = htmlspecialchars(filter_input(INPUT_POST, 'cp'));
-        $userMail = filter_input(INPUT_POST, 'mail');
+            //prend les informations du formulaire inscription
+            $userNameCompany = htmlspecialchars(filter_input(INPUT_POST, 'nameCompany'));
+            $userFirstName = htmlspecialchars(filter_input(INPUT_POST, 'firstName'));
+            $userName = htmlspecialchars(filter_input(INPUT_POST, 'name'));
+            $userAdress = htmlspecialchars(filter_input(INPUT_POST, 'adress'));
+            $userCity = htmlspecialchars(filter_input(INPUT_POST, 'city'));
+            $userCP = htmlspecialchars(filter_input(INPUT_POST, 'cp'));
+            $userMail = filter_input(INPUT_POST, 'mail');
 
-        if ($userName && $userFirstName && $userMail && $hash && $userAdress && $userCity && $userCP) {
-                $usersData = compact("userName", "userFirstName", "userMail", "userAdress", "userCity", "userCP", "userNameCompany" );
+            if ($userName && $userFirstName && $userMail && $userNameCompany && $userAdress && $userCity && $userCP) {
+                $usersData = compact("userName", "userFirstName", "userMail", "userAdress", "userCity", "userCP", "userNameCompany");
                 $sql = $this->model->createClient($usersData);
-                echo json_encode(("1"));     
-            
-        } else {
-            echo json_encode(("2"));
+                echo json_encode(("1"));
+            } else {
+                echo json_encode(("2"));
+            }
         }
-    }
     }
 
     // ===================================================================================================
@@ -58,10 +57,10 @@ class Client extends Controller
             $userCP = htmlspecialchars(filter_input(INPUT_POST, 'cp'));
             $userMail = filter_input(INPUT_POST, 'mail');
             $userId = filter_input(INPUT_POST, 'id');
-                        //=======================================
+            //=======================================
             //Name Company
             if ($userNameCompany !== "") {
-                $item = "nom = '{$userNameCompany}'";
+                $item = "nameCompany = '{$userNameCompany}'";
                 $condition = "id = '{$userId}'";
                 $this->model->udapte($item, $condition);
             }
@@ -103,18 +102,18 @@ class Client extends Controller
             }
             //=======================================
             // CP
-            if ($userCp !== "") {
-                $item = "cp = '{$userCp}'";
+            if ($userCP !== "") {
+                $item = "cp = '{$userCP}'";
                 $condition = "id = '{$userId}'";
                 $this->model->udapte($item, $condition);
             }
-            
+
             $utilisateur = $this->model->showAll("id = $userId");
             echo json_encode($utilisateur);
         }
     }
 
- // ===================================================================================================
+    // ===================================================================================================
     // ===============================        delete    ===================================
     // ===================================================================================================
     public function deleteUser()
@@ -130,5 +129,4 @@ class Client extends Controller
             echo json_encode($id);
         }
     }
-
 }
